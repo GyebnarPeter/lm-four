@@ -113,7 +113,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
-.welcome-screen__text__container h1 {
+.welcome-screen__text__container h2 {
   font-family: "Questrial", sans-serif;
   font-size: 3em;
   font-weight: 400;
@@ -150,8 +150,68 @@ body {
   .welcome-screen__text__container {
     width: 100%;
   }
-  .welcome-screen__text h1 {
+  .welcome-screen__text h2 {
     font-size: 2em;
+  }
+}
+/* WHY US */
+.why-us {
+  width: 100%;
+  text-align: center;
+}
+.why-us__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 100px auto;
+}
+.why-us__header h1 {
+  font-family: "Questrial", sans-serif;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+.why-us__header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #cf9144;
+  margin: 50px 0;
+}
+.why-us__boxes {
+  display: flex;
+}
+.why-us__box {
+  flex: 1;
+  padding: 50px;
+}
+.why-us__box span {
+  font-size: 7em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1.5px lightgray;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+.why-us__box h3 {
+  font-family: "Questrial", sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  color: #00afd4;
+}
+.why-us__box article {
+  margin: 30px 0;
+  line-height: 1.4;
+  font-style: italic;
+  color: #7c7c7c;
+}
+.why-us__box p {
+  font-size: 1em;
+  color: #cf9144;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 992px) {
+  .why-us__boxes {
+    flex-direction: column;
   }
 }
 
