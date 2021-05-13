@@ -279,8 +279,50 @@ body {
     font-size: 2em;
   }
 }
-main {
-  height: 1000px;
+/* FOOTER */
+.footer {
+  width: 100%;
+  padding: 100px 0;
+  background: #fcfcfc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+.footer__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+.footer__logo img {
+  width: 100px;
+}
+.footer__nav a {
+  text-decoration: none;
+  color: black;
+}
+.footer__message h3 {
+  color: #00afd4;
+}
+
+@media screen and (max-width: 992px) {
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__box {
+    width: 100%;
+    align-items: center;
+    margin: 30px 0;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
