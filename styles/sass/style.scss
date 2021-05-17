@@ -567,3 +567,81 @@ body {
         }
     }
 }
+
+/* CONTACT */
+.contact-header {
+    margin-top: 100px;
+    width: 100%;
+    background: url("../../img/contact-bg.png") no-repeat center top;
+    background-size: cover;
+
+    h4 {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 40px;
+        font-family: modules.$title-mainfont;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
+
+.contact {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    display: flex;
+    color: #111111;
+
+    &__image {
+        background: url("../../img/contact.jpg") no-repeat center top;
+        background-size: cover;
+        flex: 1;
+    }
+
+    &__details {
+        flex: 1;
+        padding: 200px 50px;
+
+        h1 {
+            color: modules.$blue;
+            font-family: modules.$title-subfont;
+
+            span {
+                color: modules.$gold;
+            }
+        }
+
+        h3 {
+            margin: 40px 0 10px 0;
+            font-family: modules.$title-mainfont;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact {
+        flex-direction: column-reverse;
+
+        &__image {
+            height: 400px;
+            flex: unset;
+        }
+
+        &__details {
+            padding: 0 50px 30px 50px;
+        }
+    }
+}
