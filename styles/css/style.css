@@ -81,6 +81,22 @@ body {
 @media screen and (max-width: 1440px) {
   .nav {
     display: none;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    padding: 50px 0;
+    background: url("../../img/bg.webp") no-repeat center top;
+    background-size: cover;
+    border-bottom: 1px solid lightgray;
+  }
+  .nav__list {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav__item {
+    margin: 20px;
   }
   .nav__btn {
     display: flex;
@@ -331,7 +347,7 @@ body {
 .services__title {
   margin-top: 100px;
   width: 100%;
-  background: url("../../img/bg.png") no-repeat center top;
+  background: url("../../img/bg.webp") no-repeat center top;
   background-size: cover;
 }
 .services__title h1 {
@@ -394,7 +410,7 @@ body {
   background-size: cover;
 }
 .services__insulation {
-  background: url("../../img/insulation-2.webp") no-repeat center top;
+  background: url("../../img/insulation.webp") no-repeat center top;
   background-size: cover;
 }
 .services__tiler {
@@ -416,7 +432,7 @@ body {
 .contact-header {
   margin-top: 100px;
   width: 100%;
-  background: url("../../img/bg.png") no-repeat center top;
+  background: url("../../img/bg.webp") no-repeat center top;
   background-size: cover;
 }
 .contact-header h4 {
@@ -439,7 +455,7 @@ body {
   display: flex;
 }
 .contact__image {
-  background: url("../../img/contact.jpg") no-repeat center top;
+  background: url("../../img/contact.webp") no-repeat center top;
   background-size: cover;
   flex: 1;
 }
@@ -483,7 +499,7 @@ body {
 .our-team-header {
   margin-top: 100px;
   width: 100%;
-  background: url("../../img/bg.png") no-repeat center top;
+  background: url("../../img/bg.webp") no-repeat center top;
   background-size: cover;
 }
 .our-team-header h4 {
@@ -507,7 +523,7 @@ body {
 }
 .our-team__text {
   flex: 1;
-  padding-right: 100px;
+  padding: 100px 100px 100px 0;
 }
 .our-team__text h2 {
   font-family: "Questrial", sans-serif;
@@ -521,7 +537,7 @@ body {
 }
 .our-team__image {
   flex: 1;
-  background: url("../../img/team.jpg") no-repeat top right;
+  background: url("../../img/team.webp") no-repeat top right;
   background-size: cover;
 }
 
@@ -541,7 +557,7 @@ body {
 .how-we-work-header {
   margin-top: 100px;
   width: 100%;
-  background: url("../../img/bg.png") no-repeat center top;
+  background: url("../../img/bg.webp") no-repeat center top;
   background-size: cover;
 }
 .how-we-work-header h4 {
