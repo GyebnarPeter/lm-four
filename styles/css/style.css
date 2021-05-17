@@ -6,6 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #111111;
 }
 
 .button {
@@ -326,44 +327,23 @@ body {
     text-align: center;
   }
 }
-/* SUBPAGES */
-.subpage {
-  margin-top: 100px;
-}
-.subpage__title {
-  position: relative;
-}
-.subpage__title h1 {
-  padding: 200px 0;
-  text-align: center;
-  font-size: 6em;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 5px;
-  text-shadow: 1px 1px 10px black;
-  z-index: 100;
-}
-.subpage__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: -1;
-}
-
-@media screen and (max-width: 768px) {
-  .subpage__title h1 {
-    font-size: 3em;
-    padding: 100px 0;
-  }
-}
 /* SERVICES */
 .services__title {
-  background: url("../../img/insulation.webp") no-repeat center top;
+  margin-top: 100px;
+  width: 100%;
+  background: url("../../img/bg.png") no-repeat center top;
   background-size: cover;
+}
+.services__title h1 {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .services__details {
   width: 100%;
@@ -436,7 +416,7 @@ body {
 .contact-header {
   margin-top: 100px;
   width: 100%;
-  background: url("../../img/contact-bg.png") no-repeat center top;
+  background: url("../../img/bg.png") no-repeat center top;
   background-size: cover;
 }
 .contact-header h4 {
@@ -457,7 +437,6 @@ body {
   margin: 0 auto;
   padding: 100px 40px;
   display: flex;
-  color: #111111;
 }
 .contact__image {
   background: url("../../img/contact.jpg") no-repeat center top;
@@ -498,6 +477,131 @@ body {
   }
   .contact__details {
     padding: 0 50px 30px 50px;
+  }
+}
+/* OUR TEAM */
+.our-team-header {
+  margin-top: 100px;
+  width: 100%;
+  background: url("../../img/bg.png") no-repeat center top;
+  background-size: cover;
+}
+.our-team-header h4 {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.our-team {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 40px;
+  display: flex;
+}
+.our-team__text {
+  flex: 1;
+  padding-right: 100px;
+}
+.our-team__text h2 {
+  font-family: "Questrial", sans-serif;
+  color: #cf9144;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+.our-team__text p {
+  line-height: 1.6;
+  margin: 20px 0 50px 0;
+}
+.our-team__image {
+  flex: 1;
+  background: url("../../img/team.jpg") no-repeat top right;
+  background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .our-team {
+    flex-direction: column;
+  }
+  .our-team__text {
+    padding: 0;
+  }
+  .our-team__image {
+    height: 400px;
+    flex: unset;
+  }
+}
+/* HOW WE WORK */
+.how-we-work-header {
+  margin-top: 100px;
+  width: 100%;
+  background: url("../../img/bg.png") no-repeat center top;
+  background-size: cover;
+}
+.how-we-work-header h4 {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.how-we-works {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px;
+}
+.how-we-works__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.how-we-works__item__image {
+  flex: 1;
+  margin: 50px 0 100px 0;
+}
+.how-we-works__item__image img {
+  width: 500px;
+  border-radius: 50%;
+}
+.how-we-works__item__text {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 0 100px;
+  text-align: center;
+}
+.how-we-works__item__text h2 {
+  color: #cf9144;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+.how-we-works__item__text p {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .how-we-works__item__image {
+    display: flex;
+    justify-content: center;
+  }
+  .how-we-works__item__image img {
+    width: 90%;
+  }
+  .how-we-works__item__text {
+    padding: 0 20px;
   }
 }
 
