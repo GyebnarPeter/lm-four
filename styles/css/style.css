@@ -35,6 +35,7 @@ body {
   left: 0;
   border-bottom: 1px solid lightgray;
   background: white;
+  z-index: 100;
 }
 .header__container {
   height: 100%;
@@ -220,7 +221,7 @@ body {
 .what-we-do {
   width: 100%;
   display: flex;
-  border-width: 1px 0;
+  border-width: 1px 0 0 0;
   border-style: solid;
   border-color: lightgray;
 }
@@ -285,9 +286,10 @@ body {
   padding: 100px 0;
   background: #fcfcfc;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1px;
   line-height: 1.8;
+  border-top: 1px solid lightgray;
 }
 .footer__container {
   width: 100%;
@@ -322,6 +324,112 @@ body {
     align-items: center;
     margin: 30px 0;
     text-align: center;
+  }
+}
+/* SUBPAGES */
+.subpage {
+  margin-top: 100px;
+}
+.subpage__title {
+  position: relative;
+}
+.subpage__title h1 {
+  padding: 200px 0;
+  text-align: center;
+  font-size: 6em;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 10px black;
+  z-index: 100;
+}
+.subpage__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .subpage__title h1 {
+    font-size: 3em;
+    padding: 100px 0;
+  }
+}
+/* SERVICES */
+.services__title {
+  background: url("../../img/insulation.webp") no-repeat center top;
+  background-size: cover;
+}
+.services__details {
+  width: 100%;
+  max-width: 1440px;
+  margin: 100px auto;
+}
+.services__heading {
+  margin: 100px 30px 50px 30px;
+}
+.services__heading h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em;
+  color: #cf9144;
+  margin-bottom: 20px;
+}
+.services__heading h4 {
+  font-family: "Questrial", sans-serif;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.services__item {
+  display: flex;
+  margin-bottom: 100px;
+}
+.services__item__image {
+  flex: 3;
+}
+.services__item__text {
+  flex: 2;
+  padding: 50px;
+  line-height: 1.5;
+}
+.services__item__text h2 {
+  color: #00afd4;
+  font-family: "Montserrat", sans-serif;
+}
+.services__item__text p {
+  margin: 20px 0;
+}
+.services__item__text ol {
+  padding-left: 30px;
+}
+.services__item-reverse {
+  flex-direction: row-reverse;
+}
+.services__paint {
+  background: url("../../img/painter.webp") no-repeat center top;
+  background-size: cover;
+}
+.services__insulation {
+  background: url("../../img/insulation-2.webp") no-repeat center top;
+  background-size: cover;
+}
+.services__tiler {
+  background: url("../../img/tiler.webp") no-repeat center top;
+  background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .services__item {
+    flex-direction: column-reverse;
+  }
+  .services__item__image {
+    height: 400px;
+    width: 100%;
+    flex: unset;
   }
 }
 
